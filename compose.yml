@@ -1,0 +1,9 @@
+services:
+  pico_probe:
+    build: .
+    container_name: pico_probe
+    volumes:
+      - ./pico:/pico
+    working_dir: /pico
+    stdin_open: true
+    tty: true
